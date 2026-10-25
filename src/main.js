@@ -43,7 +43,7 @@ async function initHero() {
     },
   });
   try {
-    await app.load('/models/hedgehog.glb');
+    await app.load(`${import.meta.env.BASE_URL}models/hedgehog.glb`);
     hero.classList.add('is-ready');
     window.__ready = true;
   } catch (err) {

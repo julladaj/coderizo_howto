@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How it works — coderizo Shopware 6 Extensions</title>
+  <meta name="description" content="Get Shopware 6 plugins from the coderizo Extension Marketplace in 3 easy steps: purchase, log in to the CoderizoExtensionManager and download." />
+  <meta name="theme-color" content="#05070d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/models/hedgehog.glb" as="fetch" type="model/gltf-binary" crossorigin />
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true"><div class="stars s1"></div><div class="stars s2"></div><div class="nebula"></div></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="nav" id="top">
+    <a class="logo" href="#top" aria-label="coderizo home">
+      <span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i><b></b></span>
+      <span class="logo-word">coderizo</span>
+    </a>
+    <nav class="nav-pills" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="https://www.coderizo.com/en/shopware-6-extensions" target="_blank" rel="noopener">Extensions</a>
+      <a href="#how" class="active" aria-current="page">How it works</a>
+      <a href="#plugins">Plugins</a>
+      <a href="#explore">Explore</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+      </button>
+      <a class="nav-link" href="#">Login</a>
+      <a class="btn btn-primary btn-sm" href="https://www.coderizo.com/en/shopware-6-extensions" target="_blank" rel="noopener">Get plugins</a>
+      <button class="icon-btn burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-floor"></div>
+        <div class="hero-word" data-text="CODERIZO">CODERIZO</div>
+        <div class="hero-bgline">
+          <span>SHOPWARE 6 EXTENSIONS</span><span>PLUGINS &amp; THEMES</span><span>ONE MANAGER. EVERY PLUGIN.</span>
+        </div>
+        <div class="hero-glow"></div>
+      </div>
+
+      <div class="rings" aria-hidden="true">
+        <svg viewBox="0 0 600 600">
+          <defs>
+            <linearGradient id="arcG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1aab73" stop-opacity="0"/>
+              <stop offset=".55" stop-color="#2ee59d"/>
+              <stop offset="1" stop-color="#3b8bff"/>
+            </linearGradient>
+          </defs>
+          <circle class="r-dots" cx="300" cy="300" r="292"/>
+          <circle class="r-thin" cx="300" cy="300" r="250"/>
+          <circle class="r-arc" cx="300" cy="300" r="214"/>
+          <circle class="r-dash" cx="300" cy="300" r="182"/>
+          <g class="r-ticks"><path d="M300 2v18M300 580v18M2 300h18M580 300h18"/></g>
+        </svg>
+      </div>
+
+      <div class="stage" id="stage">
+        <canvas id="hedgehog" aria-label="3D hedgehog mascot that follows your cursor" role="img"></canvas>
+        <div class="loader" id="loader" aria-live="polite">
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle class="p" cx="50" cy="50" r="44"/></svg>
+          <span id="loaderPct">0%</span>
+          <em>Booting mascot</em>
+        </div>
+      </div>
+
+      <!-- HUD -->
+      <div class="hud hud-tl" aria-hidden="true">
+        <span class="bracket"></span>
+        SUBJECT&nbsp;CR-01 / "THE HEDGEHOG"
+      </div>
+      <div class="hud hud-tr" aria-hidden="true">
+        <span class="bracket"></span>
+        <div class="hud-status"><i class="dot"></i><span id="hudMode">IDLE / SCANNING</span></div>
+        <dl>
+          <dt>YAW</dt><dd id="hudYaw">+00.0°</dd>
+          <dt>PITCH</dt><dd id="hudPitch">+00.0°</dd>
+          <dt>OPTIC</dt><dd id="hudOptic">100%</dd>
+        </dl>
+      </div>
+
+      <div class="hero-content">
+        <a class="chip" href="#how">
+          <span class="chip-tag"><i></i>NEW</span>
+          Extension Manager · 3-step setup
+          <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+        </a>
+        <h1 class="hero-title" id="hero-title">
+          <span class="line"><span>HOW IT</span></span>
+          <span class="line"><span><em class="outline" data-text="WORK">WORK</em><b class="q">?</b></span></span>
+        </h1>
+        <p class="hero-lead">Purchase plugins, connect your shop with the <strong>CoderizoExtensionManager</strong>, and install every extension straight from your Shopware&nbsp;6 admin — no uploads, no zip files.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#how">See the 3 steps <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a>
+          <a class="btn btn-ghost" href="https://www.coderizo.com/en/shopware-6-extensions" target="_blank" rel="noopener"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>Browse marketplace</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatars"><i style="--c:#1aab73"></i><i style="--c:#2b7bff"></i><i style="--c:#16c1c8"></i><i style="--c:#8b5cf6"></i></div>
+          <p><strong>61</strong> Shopware 6 extensions — free &amp; premium</p>
+        </div>
+      </div>
+
+      <aside class="hero-cards" aria-label="Marketplace highlights">
+        <article class="glass card-release">
+          <header><span class="mono">QUICK SETUP</span><span class="tag">SHOPWARE 6</span></header>
+          <h3>Extensions Manager</h3>
+          <div class="row"><span class="mono">PRICE</span><strong class="price">€0.00 <small>FREE</small></strong></div>
+          <div class="counters">
+            <div><b>03</b><span>STEPS</span></div><i>:</i>
+            <div><b>01</b><span>LOGIN</span></div><i>:</i>
+            <div><b>00</b><span>ZIP FILES</span></div>
+          </div>
+        </article>
+        <article class="glass card-ladder">
+          <header><span class="mono">POPULAR RIGHT NOW</span><span class="mono">PRICE</span></header>
+          <ol>
+            <li style="--w:92%"><span class="n">01</span><i style="--c:#1aab73"></i><span class="name">Advanced Live Search</span><span class="v">Free</span></li>
+            <li style="--w:78%"><span class="n">02</span><i style="--c:#2b7bff"></i><span class="name">Two-Factor Auth</span><span class="v">€0.99</span></li>
+            <li style="--w:64%"><span class="n">03</span><i style="--c:#16c1c8"></i><span class="name">One Page Checkout</span><span class="v">€0.99</span></li>
+          </ol>
+        </article>
+      </aside>
+
+      <div class="hero-ticker" aria-hidden="true">
+        <span class="scroll-cue">SCROLL</span>
+        <div class="ticker-mask">
+          <div class="ticker-track">
+            <span>PURCHASE</span><b>✦</b><span>CONNECT</span><b>✦</b><span>DOWNLOAD</span><b>✦</b><span>AUTO-UPDATES</span><b>✦</b><span>LICENSE SYNC</span><b>✦</b><span>ONE-CLICK INSTALL</span><b>✦</b>
+            <span>PURCHASE</span><b>✦</b><span>CONNECT</span><b>✦</b><span>DOWNLOAD</span><b>✦</b><span>AUTO-UPDATES</span><b>✦</b><span>LICENSE SYNC</span><b>✦</b><span>ONE-CLICK INSTALL</span><b>✦</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2 — STEPS ============ -->
+    <section class="steps" id="how" aria-labelledby="how-title">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i></i>How it works</span>
+        <h2 id="how-title">Three easy steps.<br /><span class="grad">Zero friction.</span></h2>
+        <p>From marketplace to a running plugin in minutes. Everything happens inside your Shopware&nbsp;6 admin.</p>
+      </div>
+
+      <div class="steps-list">
+        <div class="steps-rail" aria-hidden="true"><span id="railFill"></span></div>
+
+        <!-- STEP 1 -->
+        <article class="step" data-step="1">
+          <div class="step-copy reveal">
+            <span class="step-num" aria-hidden="true">01</span>
+            <span class="step-chip">Step 01</span>
+            <h3>Purchase plugins</h3>
+            <p>Visit the <a href="https://www.coderizo.com/en/shopware-6-extensions" target="_blank" rel="noopener">Extension Marketplace</a> and purchase the plugins you need. First-time purchases include a free 7-day trial you can cancel at no cost.</p>
+            <ul class="ticks">
+              <li>Free and premium extensions</li>
+              <li>Licenses bound to your shop domain</li>
+              <li>SEPA, card &amp; PayPal payments</li>
+            </ul>
+            <a class="btn btn-ghost btn-sm" href="https://www.coderizo.com/en/shopware-6-extensions" target="_blank" rel="noopener">Open marketplace <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+          <div class="step-art reveal" data-tilt>
+            <div class="window" id="art1">
+              <div class="win-bar"><i></i><i></i><i></i><span class="url">coderizo.com/checkout</span></div>
+              <div class="co">
+                <div class="co-left">
+                  <div class="co-offer" data-el="offer">
+                    <svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg>
+                    <div><b>Available Offers</b><span>– First-time plugin purchase includes a free 7-day trial.</span><span>– Cancel during the trial at no cost.</span></div>
+                  </div>
+                  <h4>My Shopping Cart <small>(1 Item)</small></h4>
+                  <label class="co-label">DOMAIN</label>
+                  <div class="co-select">example.com (1)<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></div>
+                  <div class="co-item" data-el="item">
+                    <span class="plug-ico"><i></i><i></i><i></i><b></b></span>
+                    <div><b>Coderizo Extensions Manager</b><span>Domain: <em>example.com</em></span><span class="free">FREE</span></div>
+                    <strong>€0.00*</strong>
+                  </div>
+                </div>
+                <div class="co-right">
+                  <h4>Payment Details</h4>
+                  <div class="co-pay"><i class="radio"></i><div><b>SEPA Direct Debit</b><span>Country: DE</span><span>Last IBAN Digit: ***7160</span></div></div>
+                  <h4>Order Summary</h4>
+                  <dl class="co-sum"><dt>Net total</dt><dd>€0.00</dd><dt>Tax <small>– Reverse charge</small></dt><dd>€0.00</dd><dt class="gt">Grand total</dt><dd class="gt">€0.00</dd></dl>
+                  <label class="co-check" data-el="check"><i></i>I accept the <u>Terms of Services</u>.</label>
+                  <button class="co-submit" data-el="submit" tabindex="-1"><span class="lbl">Submit order and subscribe →</span><span class="spin"></span><span class="ok">✓ Order confirmed</span></button>
+                </div>
+              </div>
+              <div class="toast" data-el="toast"><i>✓</i><div><b>License activated</b><span>Extensions Manager · example.com</span></div></div>
+              <svg class="cursor" viewBox="0 0 24 24" data-el="cursor"><path d="M5 3l14 8-6 1.6L10 19z"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- STEP 2 -->
+        <article class="step flip" data-step="2">
+          <div class="step-copy reveal">
+            <span class="step-num" aria-hidden="true">02</span>
+            <span class="step-chip">Step 02</span>
+            <h3>Log in to the <span class="nowrap">“CoderizoExtensionManager”</span> plugin</h3>
+            <p>Access your Shopware Admin Panel, navigate to <b>Coderizo Extension → Account</b>, and log in to your account.</p>
+            <ul class="ticks">
+              <li>Works with every Shopware 6 sales channel</li>
+              <li>Licenses sync automatically</li>
+              <li>Secure, token-based connection</li>
+            </ul>
+          </div>
+          <div class="step-art reveal" data-tilt>
+            <div class="window" id="art2">
+              <div class="win-bar"><i></i><i></i><i></i><span class="url">yourshop.com/admin#/coderizo/account</span></div>
+              <div class="adm">
+                <aside class="adm-side">
+                  <div class="adm-logo"><span></span></div>
+                  <ul>
+                    <li><i class="g1"></i>Dashboard</li>
+                    <li><i class="g2"></i>Catalogues</li>
+                    <li><i class="g3"></i>Orders</li>
+                    <li><i class="g4"></i>Customers</li>
+                    <li><i class="g5"></i>Marketing</li>
+                    <li class="adm-cz" data-el="nav"><i class="g6"></i>Coderizo Extension</li>
+                    <li class="adm-sub" data-el="sub">Account</li>
+                    <li class="adm-sub2">Extensions</li>
+                    <li><i class="g7"></i>Settings</li>
+                  </ul>
+                </aside>
+                <div class="adm-main">
+                  <div class="adm-crumb">Coderizo Extension <span>›</span> <b>Account</b></div>
+                  <div class="adm-card" data-el="card">
+                    <div class="adm-form">
+                      <span class="plug-ico lg"><i></i><i></i><i></i><b></b></span>
+                      <h5>Sign in to coderizo</h5>
+                      <label>Email<span class="field" data-el="email"><span class="typed"></span><i class="caret"></i></span></label>
+                      <label>Password<span class="field" data-el="pass"><span class="typed"></span><i class="caret"></i></span></label>
+                      <button class="adm-btn" data-el="login" tabindex="-1"><span class="lbl">Log in</span><span class="spin"></span></button>
+                    </div>
+                    <div class="adm-ok">
+                      <div class="ok-badge"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></div>
+                      <h5>Connected</h5>
+                      <p>you@yourshop.com</p>
+                      <ul><li><span>Licenses</span><b>3 synced</b></li><li><span>Domain</span><b>yourshop.com</b></li><li><span>Status</span><b class="live">● Active</b></li></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <svg class="cursor" viewBox="0 0 24 24" data-el="cursor"><path d="M5 3l14 8-6 1.6L10 19z"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- STEP 3 -->
+        <article class="step" data-step="3">
+          <div class="step-copy reveal">
+            <span class="step-num" aria-hidden="true">03</span>
+            <span class="step-chip">Step 03</span>
+            <h3>Download and use</h3>
+            <p>All available plugins — including free plugins and those you have purchased — are displayed in the list. Simply download your desired plugins and start using them right away.</p>
+            <ul class="ticks">
+              <li>One-click download &amp; install</li>
+              <li>Updates delivered in the same list</li>
+              <li>No manual zip uploads</li>
+            </ul>
+          </div>
+          <div class="step-art reveal" data-tilt>
+            <div class="window" id="art3">
+              <div class="win-bar"><i></i><i></i><i></i><span class="url">yourshop.com/admin#/coderizo/extensions</span></div>
+              <div class="lst">
+                <div class="lst-head"><b>My Extensions</b><span class="lst-filter"><em class="on">All</em><em>Free</em><em>Purchased</em></span></div>
+                <div class="lst-rows">
+                  <div class="lst-row" data-row><span class="plug-ico sm" style="--a:#1aab73;--b:#0e7f8c"><i></i><i></i><i></i><b></b></span><div class="meta"><b>Advanced Live Search</b><span>v3.2.0 · <em class="t-free">Free</em></span></div><button class="dl" tabindex="-1"><span class="lbl">Download</span><span class="bar"><i></i></span><span class="done">Installed</span></button></div>
+                  <div class="lst-row" data-row><span class="plug-ico sm" style="--a:#2b7bff;--b:#5a3bff"><i></i><i></i><i></i><b></b></span><div class="meta"><b>Two-Factor Authentication</b><span>v2.1.4 · <em class="t-paid">Purchased</em></span></div><button class="dl" tabindex="-1"><span class="lbl">Download</span><span class="bar"><i></i></span><span class="done">Installed</span></button></div>
+                  <div class="lst-row" data-row><span class="plug-ico sm" style="--a:#16c1c8;--b:#1aab73"><i></i><i></i><i></i><b></b></span><div class="meta"><b>Smart One Page Checkout</b><span>v1.8.0 · <em class="t-paid">Purchased</em></span></div><button class="dl" tabindex="-1"><span class="lbl">Download</span><span class="bar"><i></i></span><span class="done">Installed</span></button></div>
+                  <div class="lst-row" data-row><span class="plug-ico sm" style="--a:#8b5cf6;--b:#2b7bff"><i></i><i></i><i></i><b></b></span><div class="meta"><b>SEO Redirect Manager Pro</b><span>v4.0.1 · <em class="t-paid">Purchased</em></span></div><button class="dl" tabindex="-1"><span class="lbl">Download</span><span class="bar"><i></i></span><span class="done">Installed</span></button></div>
+                </div>
+              </div>
+              <svg class="cursor" viewBox="0 0 24 24" data-el="cursor"><path d="M5 3l14 8-6 1.6L10 19z"/></svg>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 3 — MARQUEES ============ -->
+    <section class="plugins" id="plugins" aria-labelledby="plugins-title">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i></i>Plugin universe</span>
+        <h2 id="plugins-title">Everything your shop needs,<br /><span class="grad">one manager away.</span></h2>
+      </div>
+      <div class="marquee" data-dir="left" aria-label="Free plugins">
+        <span class="marquee-label"><i class="dot g"></i>Free plugins</span>
+        <div class="marquee-track" id="mqFree"></div>
+      </div>
+      <div class="marquee" data-dir="right" aria-label="Popular plugins">
+        <span class="marquee-label"><i class="dot b"></i>Popular plugins</span>
+        <div class="marquee-track" id="mqPopular"></div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 4 — BENTO ============ -->
+    <section class="explore" id="explore" aria-labelledby="explore-title">
+      <div class="streaks" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="section-head reveal">
+        <span class="eyebrow"><i></i>Explore the marketplace</span>
+        <h2 id="explore-title">Built for <span class="grad">Shopware 6.</span></h2>
+      </div>
+
+      <div class="bento-shell reveal">
+        <div class="bento-top">
+          <a class="b-pill b-logo" href="#top"><span class="logo-mark sm" aria-hidden="true"><i></i><i></i><i></i><b></b></span>coderizo</a>
+          <label class="b-search"><input type="search" placeholder="Search 61 extensions…" aria-label="Search extensions" /><span class="b-circle"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></span></label>
+          <a class="b-pill" href="#how"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/></svg>Docs</a>
+          <button class="b-circle lg" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></button>
+          <span class="b-pill b-user">Your Shop<i class="ava">YS</i></span>
+        </div>
+        <div class="bento-cats">
+          <button class="b-circle lg" aria-label="Filters"><svg viewBox="0 0 24 24"><path d="M4 7h16M7 12h10M10 17h4"/></svg></button>
+          <div class="cats" role="tablist">
+            <button class="on" role="tab" aria-selected="true">All</button>
+            <button role="tab">Checkout</button>
+            <button role="tab">SEO</button>
+            <button role="tab">B2B</button>
+            <button role="tab">Marketing</button>
+            <button role="tab">Admin tools</button>
+          </div>
+        </div>
+
+        <div class="bento">
+          <!-- tall featured -->
+          <article class="b-card b-feature">
+            <img class="b-feature-bg" src="/images/hedgehog.png" alt="" loading="lazy" />
+            <div class="b-feature-card glass">
+              <div class="b-ft-top"><strong id="ftPrice">€0.00</strong><span class="b-rate"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.8-4.5 4.2 1.1 6L12 16.7 6.6 19.6l1.1-6L3.2 9.4l6.1-.8z"/></svg><span id="ftTag">Free</span></span></div>
+              <span class="b-ft-name" id="ftName">Extensions Manager</span>
+              <img src="/images/hedgehog.png" alt="coderizo hedgehog mascot" loading="lazy" />
+              <button class="b-bag" aria-label="Add to cart"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></button>
+            </div>
+            <div class="b-slider">
+              <button class="prev" aria-label="Previous featured plugin"><svg viewBox="0 0 24 24"><path d="M19 12H5m5-5-5 5 5 5"/></svg></button>
+              <span>Slide left and right</span>
+              <button class="next" aria-label="Next featured plugin"><svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></button>
+            </div>
+          </article>
+
+          <!-- trending -->
+          <article class="b-card b-trend">
+            <div class="b-trend-copy">
+              <h3>Trending now <svg class="flame" viewBox="0 0 24 24"><path d="M12 2c1 4 5 5.5 5 10.5A5 5 0 0 1 7 12.5c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-9z"/></svg></h3>
+              <p>Extensions gaining traction in the Shopware community</p>
+            </div>
+            <div class="orb" aria-hidden="true">
+              <div class="orb-core"></div>
+              <div class="orbit o1"><span class="plug-ico sm" style="--a:#1aab73;--b:#0e7f8c"><i></i><i></i><i></i><b></b></span></div>
+              <div class="orbit o2"><span class="plug-ico sm" style="--a:#2b7bff;--b:#5a3bff"><i></i><i></i><i></i><b></b></span></div>
+              <div class="orbit o3"><span class="plug-ico sm" style="--a:#16c1c8;--b:#2b7bff"><i></i><i></i><i></i><b></b></span></div>
+            </div>
+            <span class="b-chip glass"><svg viewBox="0 0 24 24"><path d="M12 2c1 4 5 5.5 5 10.5A5 5 0 0 1 7 12.5c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-9z"/></svg>Top 10</span>
+          </article>
+
+          <!-- top developers -->
+          <article class="b-card b-devs">
+            <div class="b-row"><span class="b-tag">Our developers</span><a class="b-arrow" href="#" aria-label="Meet the team"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <p>Built and maintained by certified Shopware developers</p>
+            <div class="b-avatars"><i style="--c:#1aab73">AK</i><i style="--c:#2b7bff">MS</i><i style="--c:#16c1c8">JL</i><i style="--c:#8b5cf6">TR</i><i style="--c:#0e7f8c">+</i></div>
+          </article>
+
+          <!-- newsletter -->
+          <article class="b-card b-news">
+            <div class="b-row"><span class="b-tag">Join the newsletter</span><span class="b-arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            <form class="b-form" onsubmit="event.preventDefault(); this.classList.add('sent')">
+              <input type="email" placeholder="Email" aria-label="Email" required />
+              <button type="submit"><span>Subscribe for releases</span><em>✓ You're on the list</em></button>
+            </form>
+          </article>
+
+          <!-- featured release -->
+          <article class="b-card b-release">
+            <div class="b-release-copy">
+              <span class="b-tag">New release</span>
+              <h3>Released this week</h3>
+              <p>Collect verified reviews automatically with Feedback Xpert — branded post-purchase emails and storefront widgets.</p>
+            </div>
+            <div class="b-release-art">
+              <div class="rv">
+                <div class="rv-stars"><i></i><i></i><i></i><i></i><i></i></div>
+                <span class="rv-l w1"></span><span class="rv-l w2"></span><span class="rv-l w3"></span>
+                <div class="rv-user"><i></i><span class="rv-l w4"></span></div>
+              </div>
+              <a class="b-open glass" href="https://www.coderizo.com/en/shopware-6-extensions" target="_blank" rel="noopener">Open <span class="b-circle"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+            </div>
+          </article>
+
+          <!-- marketplace info -->
+          <article class="b-card b-info">
+            <div class="b-row"><span class="b-tag">Marketplace info</span><a class="b-arrow" href="https://www.coderizo.com/en/shopware-6-extensions" target="_blank" rel="noopener" aria-label="Marketplace"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+            <p>Securely built for the Shopware&nbsp;6 platform</p>
+            <div class="fan" aria-hidden="true">
+              <span class="plug-ico" style="--a:#8b5cf6;--b:#2b7bff"><i></i><i></i><i></i><b></b></span>
+              <span class="plug-ico" style="--a:#16c1c8;--b:#2b7bff"><i></i><i></i><i></i><b></b></span>
+              <span class="plug-ico"><i></i><i></i><i></i><b></b></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span class="logo-word">coderizo</span>
+    <span>Shopware 6 Extensions · Plugins &amp; Themes</span>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

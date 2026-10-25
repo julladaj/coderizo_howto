@@ -1,0 +1,126 @@
+{
+  "file": "cyberpunk_hedgehog_v2.web.glb",
+  "bytes": 16817796,
+  "meshes": 19,
+  "materials": 18,
+  "triangles": 229544,
+  "degenerate_index_triangles": 0,
+  "max_normal_length_error": 1.4256337221851823e-07,
+  "images": [
+    {
+      "name": "fur_micro_normal_2k",
+      "bytes": 2355211,
+      "mime": "image/png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "face_fur_basecolor_2k",
+      "bytes": 873481,
+      "mime": "image/jpeg",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "cream_fur_basecolor_2k",
+      "bytes": 985076,
+      "mime": "image/jpeg",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "woven_fabric_normal_1k",
+      "bytes": 698727,
+      "mime": "image/png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "jacket_teal_woven_1k",
+      "bytes": 385776,
+      "mime": "image/jpeg",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "navy_fabric_1k",
+      "bytes": 52939,
+      "mime": "image/jpeg",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "knitted_stitches_normal_1k",
+      "bytes": 2644758,
+      "mime": "image/png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "knitted_teal_1k",
+      "bytes": 185601,
+      "mime": "image/jpeg",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "quill_fibers_normal_1k",
+      "bytes": 484902,
+      "mime": "image/png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "quill_blue_ivory_1k",
+      "bytes": 150572,
+      "mime": "image/jpeg",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bit_depth": 8
+    },
+    {
+      "name": "turquoise_radial_iris_1k",
+      "bytes": 186793,
+      "mime": "image/jpeg",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bit_depth": 8
+    }
+  ],
+  "extensions": [
+    "KHR_materials_emissive_strength"
+  ],
+  "audit_passed": true,
+  "audit_note": "Local structural audit, not Khronos conformance validation."
+}

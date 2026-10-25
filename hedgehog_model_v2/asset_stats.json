@@ -1,0 +1,27 @@
+{
+  "source": {
+    "meshes": 368,
+    "triangles": 270068,
+    "materials": 18
+  },
+  "web": {
+    "meshes": 19,
+    "triangles": 229544,
+    "materials": 18
+  },
+  "texture_encoding_mean_error": {
+    "cream_fur_basecolor_2k": 0.0076253460720181465,
+    "face_fur_basecolor_2k": 0.006836777552962303,
+    "fur_micro_normal_2k": 0.0,
+    "jacket_teal_woven_1k": 0.01584504544734955,
+    "knitted_stitches_normal_1k": 0.0,
+    "knitted_teal_1k": 0.0056169359013438225,
+    "navy_fabric_1k": 0.0018167441012337804,
+    "quill_blue_ivory_1k": 0.005893055349588394,
+    "quill_fibers_normal_1k": 0.0,
+    "turquoise_radial_iris_1k": 0.005425931885838509,
+    "woven_fabric_normal_1k": 0.0
+  },
+  "high_bytes": 43621364,
+  "web_bytes": 16817796
+}

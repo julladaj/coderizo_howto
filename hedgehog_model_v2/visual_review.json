@@ -1,0 +1,104 @@
+{
+  "reference_anchor_note": "Manual approximate annotations; comparison is image-space, not measured anatomy.",
+  "anchors": {
+    "nose": {
+      "reference_normalized_xy": [
+        0.28,
+        0.283
+      ],
+      "model_normalized_xy": [
+        0.29450562596321106,
+        0.30046600103378296
+      ],
+      "error_percent_image_width": 2.2855132638841753
+    },
+    "near_iris": {
+      "reference_normalized_xy": [
+        0.494,
+        0.278
+      ],
+      "model_normalized_xy": [
+        0.46702489256858826,
+        0.28248661756515503
+      ],
+      "error_percent_image_width": 2.735398179433401
+    },
+    "far_iris": {
+      "reference_normalized_xy": [
+        0.308,
+        0.258
+      ],
+      "model_normalized_xy": [
+        0.31497880816459656,
+        0.26659095287323
+      ],
+      "error_percent_image_width": 1.1143311534093383
+    },
+    "near_ear": {
+      "reference_normalized_xy": [
+        0.698,
+        0.287
+      ],
+      "model_normalized_xy": [
+        0.6828104257583618,
+        0.28451091051101685
+      ],
+      "error_percent_image_width": 1.5396704676176338
+    },
+    "near_headphone": {
+      "reference_normalized_xy": [
+        0.61,
+        0.621
+      ],
+      "model_normalized_xy": [
+        0.6030187606811523,
+        0.6193497478961945
+      ],
+      "error_percent_image_width": 0.7177915960867423
+    },
+    "far_headphone": {
+      "reference_normalized_xy": [
+        0.276,
+        0.638
+      ],
+      "model_normalized_xy": [
+        0.28406137228012085,
+        0.6334202587604523
+      ],
+      "error_percent_image_width": 0.9296933013822043
+    }
+  },
+  "target_3_percent_all_anchors_met": true,
+  "roundtrip": {
+    "import_succeeded": true,
+    "imported_meshes": 19,
+    "source_bounds": [
+      [
+        -1.8983263969421387,
+        -1.7387079000473022,
+        -0.0865548700094223
+      ],
+      [
+        1.9374282360076904,
+        1.9841996431350708,
+        3.931567668914795
+      ]
+    ],
+    "web_bounds": [
+      [
+        -1.8983263969421387,
+        -1.7387079000473022,
+        -0.0865548700094223
+      ],
+      [
+        1.9374282360076904,
+        1.9841996431350708,
+        3.931567668914795
+      ]
+    ],
+    "max_bounds_error_units": 0.0,
+    "mean_absolute_rgb_difference": 0.00856092106550932,
+    "alpha_difference_mean": 6.979254067118745e-06,
+    "note": "Blender glTF importer and Cycles; this does not replace a browser/WebGL test."
+  }
+}
